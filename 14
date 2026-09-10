@@ -1,0 +1,30 @@
+//Write a C program to calculate the value of nCr
+
+
+#include <stdio.h>
+int fact(int n)
+{
+    int i;
+    int res=1;
+    for (i =2;i<=n;i++)
+    {
+        res=res* i;
+    }
+    return res;
+}
+int getnCr(int n,int r)
+{
+    return fact(n)/(fact(r)*fact(n-r));
+}
+int main()
+{
+    int num,r;
+    long ncrValue;
+    printf("Enter the value of num = ");
+    scanf("%d",&num);
+    printf("Enter the value of r = ");
+    scanf("%d",&r);
+    ncrValue = getnCr(num, r);
+    printf("%d C %d = %ld\n", num, r, ncrValue);
+    return 0;
+}
