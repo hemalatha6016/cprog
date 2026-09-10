@@ -1,0 +1,23 @@
+//C program to find even and odd numbers
+
+
+#include <stdio.h>
+int main()
+{
+    int data;
+    //Get input from the user
+    printf("\n Enter any number:= ");
+    scanf("%d",&data);
+    //If number is divisible by 2 then 
+    //it is a even number
+    if((data%2)==0)
+    {
+        printf("\n Number is Even.\n\n");
+    }
+    else
+    {
+        printf("\n Number is Odd.\n\n");
+    }
+    
+    return 0;
+}
